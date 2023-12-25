@@ -7,7 +7,7 @@ export default function InformationBody() {
         click the “Delete Account” button.
       </p>
       <p className="mt-2 text-sm font-semibold leading-normal tracking-wide text-black-700 xl:mt-3 xl:text-base 2xl:mt-4">
-        Don't know what EasyMeal is?{" "}
+        Don&apos;t know what EasyMeal is?{" "}
         <a
           href="https://github.com/NolanChan1"
           target="_blank"

@@ -63,10 +63,10 @@ export default function ResetPasswordModal({
             </h3>
             <p className="mx-auto mt-6 w-80 text-sm font-normal tracking-wide text-black-800 md:mt-8 md:w-96 xl:mt-10 xl:text-base">
               To reset your password, please enter your EasyMeal account email
-              below and then click on the "Please send password reset email"
-              button. If the email provided is linked to an EasyMeal account, an
-              email with instructions on resetting your password will be sent to
-              your inbox.{" "}
+              below and then click on the &quot;Please send password reset
+              email&quot; button. If the email provided is linked to an EasyMeal
+              account, an email with instructions on resetting your password
+              will be sent to your inbox.{" "}
               <span className="font-medium">(Email might appear in spam)</span>
             </p>
 
