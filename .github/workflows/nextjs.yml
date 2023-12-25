@@ -35,14 +35,14 @@ jobs:
         id: detect-package-manager
         run: |
           touch .env.local
-          echo API_KEY=${{ secrets.API_KEY }} >> .env.local
-          echo AUTH_DOMAIN=${{ secrets.AUTH_DOMAIN }} >> .env.local
-          echo PROJECT_ID=${{ secrets.PROJECT_ID }} >> .env.local
-          echo STORAGE_BUCKET=${{ secrets.STORAGE_BUCKET }} >> .env.local
-          echo MESSAGING_SENDER_ID=${{ secrets.MESSAGING_SENDER_ID }} >> .env.local
-          echo APP_ID=${{ secrets.APP_ID }} >> .env.local
-          echo MEASUREMENT_ID=${{ secrets.MEASUREMENT_ID }} >> .env.local
-          
+          echo NEXT_PUBLIC_API_KEY=${{ secrets.API_KEY }} >> .env.local
+          echo NEXT_PUBLIC_AUTH_DOMAIN=${{ secrets.AUTH_DOMAIN }} >> .env.local
+          echo NEXT_PUBLIC_PROJECT_ID=${{ secrets.PROJECT_ID }} >> .env.local
+          echo NEXT_PUBLIC_STORAGE_BUCKET=${{ secrets.STORAGE_BUCKET }} >> .env.local
+          echo NEXT_PUBLIC_MESSAGING_SENDER_ID=${{ secrets.MESSAGING_SENDER_ID }} >> .env.local
+          echo NEXT_PUBLIC_APP_ID=${{ secrets.APP_ID }} >> .env.local
+          echo NEXT_PUBLIC_MEASUREMENT_ID=${{ secrets.MEASUREMENT_ID }} >> .env.local
+
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
