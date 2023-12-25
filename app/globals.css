@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .popup-container {
+    @apply absolute bottom-0 right-0 flex h-14 min-w-max flex-row items-center justify-start gap-3 rounded-2xl border-[3px] border-off-white-300 bg-white px-4 transition-all duration-300 2xl:h-16 2xl:gap-5 2xl:border-4 2xl:px-8;
+  }
+  .popup-text {
+    @apply text-sm font-semibold tracking-wide text-off-white-800 2xl:text-base 2xl:font-bold;
+  }
+}
+
 html,
 body {
   padding: 0;
