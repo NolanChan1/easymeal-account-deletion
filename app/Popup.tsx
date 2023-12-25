@@ -20,7 +20,7 @@ export default function Popup({
   passwordResetVisible,
 }: PopupProps) {
   return (
-    <div className="fixed bottom-8 right-8 2xl:bottom-16 2xl:right-16">
+    <div className="fixed bottom-8 right-8 md:bottom-10 md:right-10 xl:bottom-12 xl:right-12">
       {/* Error Message Popup */}
       <div
         className={`${
@@ -32,7 +32,7 @@ export default function Popup({
         <Image
           src={errorCircle}
           alt="Error icon"
-          className="h-6 w-6 2xl:h-8 2xl:w-8"
+          className="h-6 w-6 xl:h-8 xl:w-8"
         />
         <span className="popup-text">Error: Invalid Email or Password</span>
       </div>
@@ -48,7 +48,7 @@ export default function Popup({
         <Image
           src={checkmarkCircle}
           alt="Checkmark icon"
-          className="h-6 w-6 2xl:h-8 2xl:w-8"
+          className="h-6 w-6 xl:h-8 xl:w-8"
         />
         <span className="popup-text">Successfully Deleted Account</span>
       </div>
@@ -64,7 +64,7 @@ export default function Popup({
         <Image
           src={errorCircle}
           alt="Error icon"
-          className="h-6 w-6 2xl:h-8 2xl:w-8"
+          className="h-6 w-6 xl:h-8 xl:w-8"
         />
         <span className="popup-text">
           Error Deleting User Data. Please Try Again.
@@ -82,7 +82,7 @@ export default function Popup({
         <Image
           src={errorCircle}
           alt="Error icon"
-          className="h-6 w-6 2xl:h-8 2xl:w-8"
+          className="h-6 w-6 xl:h-8 xl:w-8"
         />
         <span className="popup-text">Error: Please Relog (Auth Timeout)</span>
       </div>
@@ -98,7 +98,7 @@ export default function Popup({
         <Image
           src={checkmarkCircle}
           alt="Checkmark icon"
-          className="h-6 w-6 2xl:h-8 2xl:w-8"
+          className="h-6 w-6 xl:h-8 xl:w-8"
         />
         <span className="popup-text">Password Reset Email Sent</span>
       </div>
